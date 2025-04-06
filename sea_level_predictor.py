@@ -9,7 +9,7 @@ def draw_plot():
 
     # Create scatter plot
     fig, ax = plt.subplots()
-    ax.scatter(df['Year'], df['CSIRO Adjusted Sea Level'], marker='.')
+    ax.scatter(df['Year'], df['CSIRO Adjusted Sea Level'], label='Sea level data', marker='.')
 
     # Create first line of best fit
     first_line_fit = linregress(df['Year'], df['CSIRO Adjusted Sea Level'])
